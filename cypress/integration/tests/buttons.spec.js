@@ -8,5 +8,6 @@ describe('Test behaviour of buttons', () => {
       
         homePage.visitHomePage();
         homePage.clickChangeTextButton();
+        homePage.ifTextHasBeenChangedProperly();
     })
   })
