@@ -5,5 +5,6 @@ workflows:
   build:
     jobs:
       - cypress/run:
+         command: npx cypress run --record --key 7e18f213-8151-4974-851e-9ddbe4ac75f5
          record: true
       
