@@ -2,5 +2,6 @@
     "baseUrl": "https://aquabottesting.com/",
     "viewportWidth": 1800,
     "viewportHeight": 1200,
-    "testFiles": "**/*.spec.js"
+    "testFiles": "**/*.spec.ts",
+    "projectId": "r4hn1x"
 }
