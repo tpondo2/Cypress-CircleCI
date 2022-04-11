@@ -7,6 +7,7 @@ class BasePage {
 
     // FINDING ELEMENTS
     public findElementWithId = (id: String) => cy.get(`#${id}`);
+    public findElementWithClass = (className: String) => cy.get(`.${className}`);
 
 }
 

@@ -4,10 +4,20 @@ describe('Test behaviour of buttons', () => {
 
     const homePage = new HomePage();
 
+    beforeEach(() => {
+        homePage.visitHomePage();
+    });
+
     it('Text of button should be changed', () => {
       
-        homePage.visitHomePage();
         homePage.clickChangeTextButton();
         homePage.ifTextHasBeenChangedProperly();
+    })
+
+    it('Visual regression of popup image', () => {
+
+        homePage.clickPopupButton();
+        homePage.doVisualRegressionForPopupImage();
+
     })
   })

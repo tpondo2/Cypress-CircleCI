@@ -4,5 +4,42 @@
     "viewportHeight": 1200,
     "testFiles": "**/*.spec.ts",
     "projectId": "r4hn1x",
-    "CYPRESS_RECORD_KEY": "7e18f213-8151-4974-851e-9ddbe4ac75f5"
+    "CYPRESS_RECORD_KEY": "7e18f213-8151-4974-851e-9ddbe4ac75f5",
+    "ignoreTestFiles": [
+        "**/__snapshots__/*",
+        "**/__image_snapshots__/*"
+    ],
+    "env": {
+        "TAGS": "not @ignore",
+        "cypress-plugin-snapshots": {
+            "autoCleanUp": true,
+            "autopassNewSnapshots": true,
+            "diffLines": 3,
+            "excludeFields": [],
+            "ignoreExtraArrayItems": false,
+            "ignoreExtraFields": false,
+            "normalizeJson": true,
+            "prettier": true,
+            "imageConfig": {
+                "createDiffImage": true,
+                "resizeDevicePixelRatio": true,
+                "threshold": 0.01,
+                "thresholdType": "percent"
+            },
+            "screenshotConfig": {
+                "blackout": [],
+                "capture": "fullPage",
+                "clip": null,
+                "disableTimersAndAnimations": true,
+                "log": false,
+                "scale": true,
+                "timeout": 30000
+            },
+            "serverEnabled": true,
+            "serverHost": "localhost",
+            "serverPort": 2121,
+            "updateSnapshots": false,
+            "backgroundBlend": "overlay"
+        }
+    }
 }
