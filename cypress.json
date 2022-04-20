@@ -1,5 +1,6 @@
 {
     "baseUrl": "https://aquabottesting.com/",
+    "video": false,
     "viewportWidth": 1800,
     "viewportHeight": 1200,
     "testFiles": "**/*.spec.ts",
@@ -28,7 +29,7 @@
             },
             "screenshotConfig": {
                 "blackout": [],
-                "capture": "fullPage",
+                "capture": "viewport",
                 "clip": null,
                 "disableTimersAndAnimations": true,
                 "log": false,
@@ -38,7 +39,7 @@
             "serverEnabled": true,
             "serverHost": "localhost",
             "serverPort": 2121,
-            "updateSnapshots": false,
+            "updateSnapshots": true,
             "backgroundBlend": "overlay"
         }
     }
