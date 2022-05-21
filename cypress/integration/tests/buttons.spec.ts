@@ -17,7 +17,13 @@ describe('Test behaviour of buttons', () => {
     it('Visual regression of popup image', () => {
 
         homePage.clickPopupButton();
-        homePage.doVisualRegressionForPopupImage();
+        homePage.doVisualRegressionOfPopupImage();
 
+    })
+
+    it('Visual regression of contact background image', () => {
+
+        homePage.clickHeader()
+        homePage.doVisualRegressionOfHeader()
     })
   })
